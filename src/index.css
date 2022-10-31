@@ -1,0 +1,81 @@
+li {
+  padding: 0px;
+  margin-left: 25px;
+  box-sizing: border-box;
+  font-size: 30px;
+}
+
+header {
+  position: absolute;
+  top: 0;
+  font-size: 60px;
+  color: orange;
+}
+
+body {
+    background-image: url("../images/galaxy.gif");
+    background-size:     cover;                     
+    background-repeat:   no-repeat;
+    background-position: center center;  
+    color: orange;
+    font: 20px "Century Gothic", Futura, sans-serif;
+    margin: 12px;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    min-height: 100vh;
+    padding: 7rem;
+  }
+  
+ol, ul {
+  padding-left: 50px;
+  position: static;
+}
+
+.board-row:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.status {
+  margin-bottom: 10px;
+}
+
+.square {
+  background: #fff;
+  border: 1px solid #999;
+  float: left;
+  font-size: 96px;
+  font-weight: bold;
+  line-height: 164px;
+  height: 164px;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 0;
+  text-align: center;
+  width: 164px;
+}
+
+.square:focus {
+  outline: none;
+}
+
+.kbd-navigation .square:focus {
+  background: #ddd;
+}
+
+.game {
+  display: flex;
+  flex-direction: row;
+}
+
+.game-info {
+  margin-left: 20px;
+  font-size: 48px;
+}
+
+.square--winning {
+  background-color: yellow;
+}
+
